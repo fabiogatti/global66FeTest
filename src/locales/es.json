@@ -1,0 +1,26 @@
+{
+    "home" : {
+        "title":"Bienvenidos al Pokédex",
+        "subtitle":"La enciclopedia digital creada por el Professor Oak es una herramienta invaluable para los Entrenadores en el mundo Pokémon.",
+        "button":"Comencemos"
+    },
+    "notFound": {
+        "title":"Oh-oh!",
+        "subtitle":"Parece que estas perdido en tu viaje!",
+        "button":"Vuelve a casa"
+    },
+    "components":{
+        "search":"Buscar",
+        "all":"Todos",
+        "favorites":"Favoritos",
+        "modalBtn":"Comparte con mis amigos",
+        "textCopied":"Texto copiado al portapapeles!",
+        "noApi":"No se pudo conectar con pokeapi.co",
+        "lang":"Idioma",
+        "en":"Inglés",
+        "es":"Español",
+        "mode":"Modo",
+        "light":"Claro",
+        "dark":"Oscuro"
+    }
+}
