@@ -4,6 +4,7 @@
     :first="$t('components.en')" 
     :second="$t('components.es')" 
     :title="$t('components.lang')" 
+    v-if="showToggle"
     @toggled="toggleLanguage" 
   />
   <Toggle 
@@ -11,6 +12,7 @@
     :first="$t('components.light')" 
     :second="$t('components.dark')" 
     :title="$t('components.mode')" 
+    v-if="showToggle"
     @toggled="toggleDarkMode" 
   />
   <router-view class="w-full" @clicked="(fetchData)"></router-view>
@@ -29,11 +31,9 @@ import { useRouter } from 'vue-router'
 import { usePokeStore } from './stores/poke.js'
 import { useI18n } from "vue-i18n"
 
-//DARK MODE
-//document.documentElement.className += 'dark'
-
 const router = useRouter() 
 const showSpinner = ref(false)
+const showToggle = ref(true)
 
 const { t, locale } = useI18n()
 
@@ -41,6 +41,7 @@ const pokeStore = usePokeStore()
 
 const fetchData = async() => {
   showSpinner.value = true
+  showToggle.value = false
 
   await fetch("https://pokeapi.co/api/v2/pokemon?limit=151").then(async(response) => {
     const json = await response.json()
