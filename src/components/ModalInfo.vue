@@ -9,10 +9,10 @@
             </div>
             <div class="py-5 px-[30px]">
                 <div class="flex flex-col space-y-2.5">
-                    <ModalText title="Name" :text="pokeObj.name" />
-                    <ModalText title="Weight" :text="pokeObj.weight.toString()" />
-                    <ModalText title="Height" :text="pokeObj.height.toString()" />
-                    <ModalText :title="pokeObj.type.includes(',') ? 'Types' : 'Type'" :text="pokeObj.type" />
+                    <ModalText :title="$t('components.name')" :text="pokeObj.name" />
+                    <ModalText :title="$t('components.weight')" :text="pokeObj.weight.toString()" />
+                    <ModalText :title="$t('components.height')" :text="pokeObj.height.toString()" />
+                    <ModalText :title="pokeObj.type.includes(',') ? $t('components.types') : $t('components.type')" :text="pokeObj.type" />
                 </div>
                 <div class="flex flex-row justify-between mt-5">
                     <button @click="copyStats" class="py-[11px] px-5">{{ $t('components.modalBtn') }}</button>
