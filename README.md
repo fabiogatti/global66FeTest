@@ -2,6 +2,9 @@
 
 Bienvenidos a mi prueba para desarrollador frontend para la empresa Global 66. A continuación un breve resumen del proyecto.
 
+La version de github pages del prjecto se encuentra [aquí](https://fabiogatti.github.io/global66FeTest/)
+(Para hacer un preview aproximado del funcionamiento de la app, tiene un par de bugs con las rutas pero no es relevante y no suceden en la versión local)
+
 ## Tecnologias
 
 Para este proyecto utilice las siguientes tecnologias:
